@@ -14,6 +14,7 @@
             <li><a href="#missao">Missão</a></li>
             <li><a href="#valores">Valores</a></li>
             <li><a href="#postos-de-saude">Postos de Saúde</a></li>
+            <li><a href="#upas">UPAs</a></li>
             <li><a href="#central-do-laboratorio">Central do Laboratório</a></li>
             <li><a href="http://lhs.hsfarma.com.br:8089/elecont/wfrmLogin.aspx" target="_blank" rel="external">Acesse seus resultados</a></li>
         </ul>
@@ -21,7 +22,7 @@
     <section id="sobre-nos">
         <h2>Sobre Nós</h2>
         <p>O Laboratório de Análises Clínicas é um laboratório de excelência que oferece uma ampla variedade de exames clínicos para atender às necessidades de seus pacientes. Com uma equipe altamente qualificada e equipamentos de última geração, o laboratório se destaca pela qualidade de seus serviços e pela agilidade na entrega dos resultados.</p>
-        <p>Fundado em [data da fundação], o laboratório tem se dedicado a fornecer aos seus pacientes do SUS de Contagem/ MG, um atendimento personalizado e de qualidade. Ao longo dos anos, o laboratório tem investido em tecnologia e na capacitação de seus profissionais, a fim de oferecer sempre o melhor aos seus clientes.</p>
+        <p>Fundado em [data da fundação], o laboratório tem se dedicado a fornecer aos seus pacientes um atendimento personalizado e de qualidade. Ao longo dos anos, o laboratório tem investido em tecnologia e na capacitação de seus profissionais, a fim de oferecer sempre o melhor aos seus clientes.</p>
     </section>
     <section id="missao">
         <h2>Missão</h2>
@@ -36,45 +37,143 @@
             <li><strong>Agilidade:</strong> Entendemos a importância do tempo de nossos pacientes e nos esforçamos para entregar os resultados de forma rápida e eficiente.</li>
         </ul>
     </section>
-    <section id="postos-de-saude">
-        <h2>Postos de Saúde</h2>
-        <p>O Laboratório de Análises Clínicas Hs Farma atende aos seguintes postos de saúde do SUS:</p>
-        <ul>
-            <h3>Distrito Eldorado</h3>
-                <li>Ubs Eldorado - Endereço: Av.José Faria Da Rocha 1986- Eldorado</li>
-                <li>Iria Diniz - Endereço: Av. João César De Oliveira 3620- Eldorado</li>
-                <li>Ubs Parque São João - Endereço: Rua Sete, 54– Parque São João</li>
-                <li>Ubs Água Branca - Endereço: Av.Seis, 320– Conj. Água Branca</li>
-           <h3>Distrito Industrial</h3>
-                <li>Ubs Jardim Industrial - Endereço: Rua Barbosa Lima, 410– J. Industrial</li>
-                <li>Ubs Industrial - Endereço: Rua Tiradentes, 3035- Industrial</li>
-            <h3>Distrito Nacional</h3>
-                <li>Ubs Estrela Dalva - Endereço: Rua Do Luar, 117- Recanto Da Pampulha</li>
-                <li>Ubs Nacional - Endereço: Rua Floriano Peixeito, 645- Nacional</li>
-            <h3>Distrito Petrolândia</h3>
-                <li> Ubs Bernardo Monteiro - Endereço: Rua Wilson Jose De Souza Bicalho, 40- Bernardo Monteiro</li>
-                <li>Ubs Petrolândia - Endereço: Rua Refinaria Gabriel Passos, 287- Petrolândia</li>
-            <h3>Distrito Ressaca</h3>
-                <li>Ubs Ressaca - Endereço: Rua Campina Verde,145– Novo Progresso</li>
-                <li>Ubs Morada Nova - Endereço: Rua José Mendes Ferreira, 102– Morada Nova</li>
-                <li>Ubs Pres. Kennedy -  Endereço: Rua Mariana S/N</li>
-            <h3>Distrito Riacho</h3>
-                <li>Ubs Sesc - Endereço: Rua Padre José Maria De Man, 596– Riacho Das Pedras</li>
-                <li>Ubs Flamengo - Endereço: Rua Monsenhor Messias, 456- Flamengo</li>
-            <h3>Distrito Sede</h3>
-                <li>Ubs Cad - Endereço: Rua Antonio Augusto, 115– Nossa Sra De Fatima</li>
-                <li>Ubs Maria Da Conceição - Endereço: Rua Para De Minas, S/N – Santa Edwigers</li>
-                <li>Ubs Sede - Endereço: Rua Joaquim Camargo, 47 Contagem</li>
-            <h3>Distrito Vargem Das Flores</h3>
-                <li>Ubs Estaleiro - Endereço: Rua Jaraguá, 116- Estaleiro</li>
-                <li>Ubs Darcy Ribeiro - Endereço: Rua João Luiz De Faria, 166- Darcy Ribeiro</li>
-                <li>Ubs Vargem - Endereço: Rua Retira Dos Imigrantes, 80- Retiro</li>
-        </ul>
-    </section>
+    <section id="postos-saude">
+  <h2>Postos de Saúde por Distrito</h2>
+
+  <div class="distrito">
+    <button class="accordion">Distrito Eldorado &#9660;</button>
+    <div class="panel">
+      <ul>
+        <li>UBS Eldorado – Av. José Faria Da Rocha, 1986 – Eldorado</li>
+        <li>Iria Diniz – Av. João César De Oliveira, 3620 – Eldorado</li>
+        <li>UBS Parque São João – Rua Sete, 54 – Parque São João</li>
+        <li>UBS Água Branca – Av. Seis, 320 – Conj. Água Branca</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="distrito">
+    <button class="accordion">Distrito Industrial &#9660;</button>
+    <div class="panel">
+      <ul>
+        <li>UBS Jardim Industrial – Rua Barbosa Lima, 410 – J. Industrial</li>
+        <li>UBS Industrial – Rua Tiradentes, 3035 – Industrial</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="distrito">
+    <button class="accordion">Distrito Nacional &#9660;</button>
+    <div class="panel">
+      <ul>
+        <li>UBS Estrela Dalva – Rua Do Luar, 117 – Recanto Da Pampulha</li>
+        <li>UBS Nacional – Rua Floriano Peixoto, 645 – Nacional</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="distrito">
+    <button class="accordion">Distrito Petrolândia &#9660;</button>
+    <div class="panel">
+      <ul>
+        <li>UBS Bernardo Monteiro – Rua Wilson José De Souza Bicalho, 40 – Bernardo Monteiro</li>
+        <li>UBS Petrolândia – Rua Refinaria Gabriel Passos, 287 – Petrolândia</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="distrito">
+    <button class="accordion">Distrito Ressaca &#9660;</button>
+    <div class="panel">
+      <ul>
+        <li>UBS Ressaca – Rua Campina Verde, 145 – Novo Progresso</li>
+        <li>UBS Morada Nova – Rua José Mendes Ferreira, 102 – Morada Nova</li>
+        <li>UBS Pres. Kennedy – Rua Mariana, S/N</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="distrito">
+    <button class="accordion">Distrito Riacho &#9660;</button>
+    <div class="panel">
+      <ul>
+        <li>UBS Sesc – Rua Padre José Maria De Man, 596 – Riacho Das Pedras</li>
+        <li>UBS Flamengo – Rua Monsenhor Messias, 456 – Flamengo</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="distrito">
+    <button class="accordion">Distrito Sede &#9660;</button>
+    <div class="panel">
+      <ul>
+        <li>UBS CAD – Rua Antonio Augusto, 115 – Nossa Sra De Fátima</li>
+        <li>UBS Maria Da Conceição – Rua Pará De Minas, S/N – Santa Edwigers</li>
+        <li>UBS Sede – Rua Joaquim Camargo, 47 – Contagem</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="distrito">
+    <button class="accordion">Distrito Vargem Das Flores &#9660;</button>
+    <div class="panel">
+      <ul>
+        <li>UBS Estaleiro – Rua Jaraguá, 116 – Estaleiro</li>
+        <li>UBS Darcy Ribeiro – Rua João Luiz De Faria, 166 – Darcy Ribeiro</li>
+        <li>UBS Vargem – Rua Retira Dos Imigrantes, 80 – Retiro</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="upas">
+  <h2>Unidades de Pronto Atendimento (UPAs)</h2>
+
+  <button class="accordion">Laboratório HS &#9660;</button>
+  <div class="panel">
+    <p>UPA 24h São Joaquim de Bicas<br>
+    R. José Gabriel de Rezende, 1717 - Pedra Branca, São Joaquim de Bicas - MG, 32920-000</p>
+  </div>
+
+  <button class="accordion">UPA JK - Eldorado - Geraldo Pinto Vieira &#9660;</button>
+  <div class="panel">
+    <p>Av. João César de Oliveira, 780<br>
+    Tel: (31) 2538-9299<br>
+    Aberto 24 horas</p>
+  </div>
+
+  <button class="accordion">UPA Industrial &#9660;</button>
+  <div class="panel">
+    <p>Av. Maria da Glória, 491<br>
+    Tel: (31) 3352-2070<br>
+    Aberto 24 horas</p>
+  </div>
+
+  <button class="accordion">UPA Ressaca &#9660;</button>
+  <div class="panel">
+    <p>Praça 21 de Abril<br>
+    Tel: (31) 2538-9299<br>
+    Aberto 24 horas</p>
+  </div>
+
+  <button class="accordion">UPA Petrolândia &#9660;</button>
+  <div class="panel">
+    <p>R. Refinária União, n° 137 - Petrolândia, Contagem - MG, 32072-180<br>
+    Tel: (31) 3352-5312<br>
+    Aberto 24 horas</p>
+  </div>
+
+  <button class="accordion">UPA Vargem das Flores &#9660;</button>
+  <div class="panel">
+    <p>Av. Retiro dos Imigrantes, 80 - Retiro, Contagem - MG, 32050-710<br>
+    Tel: (31) 3198-6251<br>
+    Aberto 24 horas</p>
+  </div>
+</section>
+
     <section id="central-do-laboratorio">
         <h2>Central do Laboratório</h2>
-        <p>Para mais informações, entre em contato com a Central do Laboratório:</p>
-        <p><strong>Endereço:</strong> R. Casuarinas, 112- Eldorado</p>
+        <p>Para mais informações ou para agendar um exame, entre em contato com a Central do Laboratório:</p>
+        <p><strong>Endereço:</strong> Rua Central, nº 500</p>
         <p><strong>Telefone:</strong> (11) 1234-5678</p>
         <p><strong>E-mail:</strong> laboratorios@email.com</p>
     </section>
@@ -83,8 +182,8 @@
         <p>Entre em contato com a Central do Laboratório se você:</p>
         <ul>
             <li>Tiver dúvidas sobre os exames oferecidos;</li>
-            <li>Reclamações e elogios;</li>
-            <li>Para confirmar o horário de atendimento das unidades;</li>
+            <li>Quiser agendar um exame;</li>
+            <li>Precisa de resultados de exames anteriores;</li>
             <li>Tiver qualquer outra dúvida ou solicitação.</li>
         </ul>
         <h2>Quando procurar o Posto de Saúde?</h2>
@@ -95,9 +194,24 @@
             <li>Tem dúvidas sobre a interpretação dos resultados de seus exames.</li>
         </ul>
     </section>
-</body>
-    <footer>
-    <p>Laboratório acreditado pelo <strong>DICQ</strong> e participante do <strong>PNCQ</strong>.</p>
-</footer>
+    <script>
+  const accordions = document.querySelectorAll(".accordion");
 
+  accordions.forEach(button => {
+    button.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+        this.innerHTML = this.innerHTML.replace("▲", "▼").replace("&#9650;", "&#9660;");
+      } else {
+        panel.style.display = "block";
+        this.innerHTML = this.innerHTML.replace("▼", "▲").replace("&#9660;", "&#9650;");
+      }
+    });
+  });
+</script>
+
+</body>
 </html>
