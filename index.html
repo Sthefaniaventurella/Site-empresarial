@@ -16,13 +16,35 @@
             <li><a href="#postos-de-saude">Postos de Saúde</a></li>
             <li><a href="#upas">UPAs</a></li>
             <li><a href="#central-do-laboratorio">Central do Laboratório</a></li>
-            <li><a href="http://lhs.hsfarma.com.br:8089/elecont/wfrmLogin.aspx" target="_blank" rel="external">Acesse seus resultados</a></li>
-        </ul>
+  </ul>
+  <nav class="navbar">
+  <ul class="menu">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">Resultados ▼</a>
+      <ul class="dropdown-menu" id="dropdown-menu">
+        <li><a href="#como-acessar">Como acessar</a></li>
+        <li><a href="http://lhs.hsfarma.com.br:8089/elecont/wfrmLogin.aspx" target="_blank">Acesse agora</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<section id="como-acessar" class="tutorial">
+  <h2>Como acessar os resultados</h2>
+  <p>Siga o passo a passo para acessar seus resultados no site externo:</p>
+  <ol>
+    <li>Clique em "Acesse agora".</li>
+    <li>Você será direcionado para o site parceiro.</li>
+    <li>Informe seu CPF e número do protocolo.</li>
+    <li>Visualize ou baixe seus resultados.</li>
+  </ol>
+</section>
+</section>
     </nav>
     <section id="sobre-nos">
         <h2>Sobre Nós</h2>
-        <p>O Laboratório de Análises Clínicas é um laboratório de excelência que oferece uma ampla variedade de exames clínicos para atender às necessidades de seus pacientes do SUS. Com uma equipe altamente qualificada e excelentes equipamentos, o laboratório se destaca pela qualidade de seus serviços e pela agilidade na entrega dos resultados.</p>
-        <p>Fundado em [data da fundação], o laboratório tem se dedicado a fornecer aos seus pacientes do SUS um atendimento personalizado e de qualidade. Ao longo dos anos, o laboratório tem investido em tecnologia e na capacitação de seus profissionais, a fim de oferecer sempre o melhor.</p>
+        <p>O Laboratório de Análises Clínicas é um laboratório de excelência que oferece uma ampla variedade de exames clínicos para atender às necessidades de seus pacientes. Com uma equipe altamente qualificada e execelentes equipamentos, o laboratório se destaca pela qualidade de seus serviços e pela agilidade na entrega dos resultados.</p>
+        <p>Fundado em [data da fundação], o laboratório tem se dedicado a fornecer aos seus pacientes um atendimento personalizado e de qualidade. Ao longo dos anos, o laboratório tem investido em tecnologia e na capacitação de seus profissionais, a fim de oferecer sempre o melhor aos seus clientes.</p>
     </section>
     <section id="missao">
         <h2>Missão</h2>
@@ -172,7 +194,7 @@
 
     <section id="central-do-laboratorio">
         <h2>Central do Laboratório</h2>
-        <p>Para mais informações entre em contato com a Central do Laboratório:</p>
+        <p>Para mais informações ou para agendar um exame, entre em contato com a Central do Laboratório:</p>
         <p><strong>Endereço:</strong> Rua Casuarinas 112- Eldorado, Contagem - MG, 32341-001</p>
         <p><strong>Telefone:</strong> (31) 3046-7105</p>
         <p><strong>E-mail:</strong> laboratorios@email.com</p>
@@ -182,7 +204,8 @@
         <p>Entre em contato com a Central do Laboratório se você:</p>
         <ul>
             <li>Tiver dúvidas sobre os exames oferecidos;</li>
-            <li>Tiver qualquer outra dúvida, solicitação, reclamção ou elogio.</li>
+            <li>Precisa de resultados de exames anteriores;</li>
+            <li>Tiver qualquer outra dúvida, solicitação, reclamação, elogio ou sugestão.</li>
         </ul>
         <h2>Quando procurar o Posto de Saúde?</h2>
         <p>Procure o Posto de Saúde se você:</p>
@@ -210,6 +233,39 @@
     });
   });
 </script>
+<script>
+  const dropdown = document.querySelector('.dropdown');
+  const toggle = document.querySelector('.dropdown-toggle');
+  const menu = document.getElementById('dropdown-menu');
 
+  // Detecta se o dispositivo é mobile
+  const isTouchDevice = () => {
+    return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  };
+
+  function toggleDropdown(event) {
+    if (isTouchDevice()) {
+      event.preventDefault();
+      dropdown.classList.toggle('open');
+    }
+  }
+
+  // Funciona com hover no desktop
+  if (!isTouchDevice()) {
+    dropdown.addEventListener('mouseenter', () => {
+      dropdown.classList.add('open');
+    });
+    dropdown.addEventListener('mouseleave', () => {
+      dropdown.classList.remove('open');
+    });
+  }
+
+  // Fecha ao clicar fora (para mobile)
+  document.addEventListener('click', function (e) {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+    }
+  });
+</script>
 </body>
 </html>
