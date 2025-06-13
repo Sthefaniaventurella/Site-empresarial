@@ -8,48 +8,58 @@
     <header>
         <img src="logo.png" alt="Logo do Laboratório">
     </header>
-    <nav>
-        <ul>
-            <li><a href="#sobre-nos">Sobre Nós</a></li>
-            <li><a href="#missao">Missão</a></li>
-            <li><a href="#valores">Valores</a></li>
-            <li><a href="#postos-de-saude">Postos de Saúde</a></li>
-            <li><a href="#upas">UPAs</a></li>
-            <li><a href="#central-do-laboratorio">Central do Laboratório</a></li>
-  </ul>
-  <nav class="navbar">
-  <ul class="menu">
-    <li class="dropdown">
-      <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event)">Resultados ▼</a>
-      <ul class="dropdown-menu" id="dropdown-menu">
-        <li><a href="#como-acessar">Como acessar</a></li>
-        <li><a href="http://lhs.hsfarma.com.br:8089/elecont/wfrmLogin.aspx" target="_blank">Acesse agora</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-
-<section id="como-acessar" class="tutorial">
-  <h2>Como acessar os resultados</h2>
-  <p>Siga o passo a passo para acessar seus resultados no site externo:</p>
-  <ol>
-    <li>Clique em "Acesse agora".</li>
-    <li>Você será direcionado para o site parceiro.</li>
-    <li>Informe seu CPF e número do protocolo.</li>
-    <li>Visualize ou baixe seus resultados.</li>
-  </ol>
-</section>
-</section>
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Institucional</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#sobre-nos">Sobre Nós</a></li>
+                    <li><a href="#missao">Missão</a></li>
+                    <li><a href="#valores">Valores</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Núcleos Técnicos Operacionais</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#upas">UPAs</a></li>
+                    <li><a href="#hospitais">Hospitais</a></li>
+                    <li><a href="#central-do-laboratorio">Central do Laboratório</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Resultados</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#como-acessar">Como acessar</a></li>
+                    <li><a href="http://lhs.hsfarma.com.br:8089/elecont/wfrmLogin.aspx" target="_blank">Acesse agora</a></li>
+                </ul>
+            </li>
+            <li><a href="#postos-saude">Postos de Saúde</a></li>
+            <li><a href="#duvida">Dúvidas Frenquentes</a></li>
+        </ul>
     </nav>
+
+    <section id="como-acessar" class="tutorial">
+        <h2>Como acessar os resultados</h2>
+        <p>Siga o passo a passo para acessar seus resultados no site externo:</p>
+        <ol>
+            <li>Clique em "Acesse agora".</li>
+            <li>Você será direcionado para o site parceiro.</li>
+            <li>Informe seu CPF e número do protocolo.</li>
+            <li>Visualize ou baixe seus resultados.</li>
+        </ol>
+    </section>
+
     <section id="sobre-nos">
         <h2>Sobre Nós</h2>
         <p>O Laboratório de Análises Clínicas é um laboratório de excelência que oferece uma ampla variedade de exames clínicos para atender às necessidades de seus pacientes. Com uma equipe altamente qualificada e execelentes equipamentos, o laboratório se destaca pela qualidade de seus serviços e pela agilidade na entrega dos resultados.</p>
         <p>Fundado em [data da fundação], o laboratório tem se dedicado a fornecer aos seus pacientes um atendimento personalizado e de qualidade. Ao longo dos anos, o laboratório tem investido em tecnologia e na capacitação de seus profissionais, a fim de oferecer sempre o melhor aos seus clientes.</p>
     </section>
+
     <section id="missao">
         <h2>Missão</h2>
         <p>Nossa missão é oferecer serviços de análises clínicas de qualidade, com agilidade e precisão, contribuindo para a promoção da saúde e do bem-estar da população.</p>
     </section>
+
     <section id="valores">
         <h2>Valores</h2>
         <ul>
@@ -59,138 +69,143 @@
             <li><strong>Agilidade:</strong> Entendemos a importância do tempo de nossos pacientes e nos esforçamos para entregar os resultados de forma rápida e eficiente.</li>
         </ul>
     </section>
+
     <section id="postos-saude">
-  <h2>Postos de Saúde por Distrito</h2>
+        <h2>Postos de Saúde por Distrito</h2>
+        <div class="distrito">
+            <button class="accordion">Distrito Eldorado &#9660;</button>
+            <div class="panel">
+                <ul>
+                    <li>UBS Eldorado – Av. José Faria Da Rocha, 1986 – Eldorado</li>
+                    <li>Iria Diniz – Av. João César De Oliveira, 3620 – Eldorado</li>
+                    <li>UBS Parque São João – Rua Sete, 54 – Parque São João</li>
+                    <li>UBS Água Branca – Av. Seis, 320 – Conj. Água Branca</li>
+                </ul>
+            </div>
+        </div>
 
-  <div class="distrito">
-    <button class="accordion">Distrito Eldorado &#9660;</button>
-    <div class="panel">
-      <ul>
-        <li>UBS Eldorado – Av. José Faria Da Rocha, 1986 – Eldorado</li>
-        <li>Iria Diniz – Av. João César De Oliveira, 3620 – Eldorado</li>
-        <li>UBS Parque São João – Rua Sete, 54 – Parque São João</li>
-        <li>UBS Água Branca – Av. Seis, 320 – Conj. Água Branca</li>
-      </ul>
-    </div>
-  </div>
+        <div class="distrito">
+            <button class="accordion">Distrito Industrial &#9660;</button>
+            <div class="panel">
+                <ul>
+                    <li>UBS Jardim Industrial – Rua Barbosa Lima, 410 – J. Industrial</li>
+                    <li>UBS Industrial – Rua Tiradentes, 3035 – Industrial</li>
+                </ul>
+            </div>
+        </div>
 
-  <div class="distrito">
-    <button class="accordion">Distrito Industrial &#9660;</button>
-    <div class="panel">
-      <ul>
-        <li>UBS Jardim Industrial – Rua Barbosa Lima, 410 – J. Industrial</li>
-        <li>UBS Industrial – Rua Tiradentes, 3035 – Industrial</li>
-      </ul>
-    </div>
-  </div>
+        <div class="distrito">
+            <button class="accordion">Distrito Nacional &#9660;</button>
+            <div class="panel">
+                <ul>
+                    <li>UBS Estrela Dalva – Rua Do Luar, 117 – Recanto Da Pampulha</li>
+                    <li>UBS Nacional – Rua Floriano Peixoto, 645 – Nacional</li>
+                </ul>
+            </div>
+        </div>
 
-  <div class="distrito">
-    <button class="accordion">Distrito Nacional &#9660;</button>
-    <div class="panel">
-      <ul>
-        <li>UBS Estrela Dalva – Rua Do Luar, 117 – Recanto Da Pampulha</li>
-        <li>UBS Nacional – Rua Floriano Peixoto, 645 – Nacional</li>
-      </ul>
-    </div>
-  </div>
+        <div class="distrito">
+            <button class="accordion">Distrito Petrolândia &#9660;</button>
+            <div class="panel">
+                <ul>
+                    <li>UBS Bernardo Monteiro – Rua Wilson José De Souza Bicalho, 40 – Bernardo Monteiro</li>
+                    <li>UBS Petrolândia – Rua Refinaria Gabriel Passos, 287 – Petrolândia</li>
+                </ul>
+            </div>
+        </div>
 
-  <div class="distrito">
-    <button class="accordion">Distrito Petrolândia &#9660;</button>
-    <div class="panel">
-      <ul>
-        <li>UBS Bernardo Monteiro – Rua Wilson José De Souza Bicalho, 40 – Bernardo Monteiro</li>
-        <li>UBS Petrolândia – Rua Refinaria Gabriel Passos, 287 – Petrolândia</li>
-      </ul>
-    </div>
-  </div>
+        <div class="distrito">
+            <button class="accordion">Distrito Ressaca &#9660;</button>
+            <div class="panel">
+                <ul>
+                    <li>UBS Ressaca – Rua Campina Verde, 145 – Novo Progresso</li>
+                    <li>UBS Morada Nova – Rua José Mendes Ferreira, 102 – Morada Nova</li>
+                    <li>UBS Pres. Kennedy – Rua Mariana, S/N</li>
+                </ul>
+            </div>
+        </div>
 
-  <div class="distrito">
-    <button class="accordion">Distrito Ressaca &#9660;</button>
-    <div class="panel">
-      <ul>
-        <li>UBS Ressaca – Rua Campina Verde, 145 – Novo Progresso</li>
-        <li>UBS Morada Nova – Rua José Mendes Ferreira, 102 – Morada Nova</li>
-        <li>UBS Pres. Kennedy – Rua Mariana, S/N</li>
-      </ul>
-    </div>
-  </div>
+        <div class="distrito">
+            <button class="accordion">Distrito Riacho &#9660;</button>
+            <div class="panel">
+                <ul>
+                    <li>UBS Sesc – Rua Padre José Maria De Man, 596 – Riacho Das Pedras</li>
+                    <li>UBS Flamengo – Rua Monsenhor Messias, 456 – Flamengo</li>
+                </ul>
+            </div>
+        </div>
 
-  <div class="distrito">
-    <button class="accordion">Distrito Riacho &#9660;</button>
-    <div class="panel">
-      <ul>
-        <li>UBS Sesc – Rua Padre José Maria De Man, 596 – Riacho Das Pedras</li>
-        <li>UBS Flamengo – Rua Monsenhor Messias, 456 – Flamengo</li>
-      </ul>
-    </div>
-  </div>
+        <div class="distrito">
+            <button class="accordion">Distrito Sede &#9660;</button>
+            <div class="panel">
+                <ul>
+                    <li>UBS CAD – Rua Antonio Augusto, 115 – Nossa Sra De Fátima</li>
+                    <li>UBS Maria Da Conceição – Rua Pará De Minas, S/N – Santa Edwigers</li>
+                    <li>UBS Sede – Rua Joaquim Camargo, 47 – Contagem</li>
+                </ul>
+            </div>
+        </div>
 
-  <div class="distrito">
-    <button class="accordion">Distrito Sede &#9660;</button>
-    <div class="panel">
-      <ul>
-        <li>UBS CAD – Rua Antonio Augusto, 115 – Nossa Sra De Fátima</li>
-        <li>UBS Maria Da Conceição – Rua Pará De Minas, S/N – Santa Edwigers</li>
-        <li>UBS Sede – Rua Joaquim Camargo, 47 – Contagem</li>
-      </ul>
-    </div>
-  </div>
+        <div class="distrito">
+            <button class="accordion">Distrito Vargem Das Flores &#9660;</button>
+            <div class="panel">
+                <ul>
+                    <li>UBS Estaleiro – Rua Jaraguá, 116 – Estaleiro</li>
+                    <li>UBS Darcy Ribeiro – Rua João Luiz De Faria, 166 – Darcy Ribeiro</li>
+                    <li>UBS Vargem – Rua Retira Dos Imigrantes, 80 – Retiro</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-  <div class="distrito">
-    <button class="accordion">Distrito Vargem Das Flores &#9660;</button>
-    <div class="panel">
-      <ul>
-        <li>UBS Estaleiro – Rua Jaraguá, 116 – Estaleiro</li>
-        <li>UBS Darcy Ribeiro – Rua João Luiz De Faria, 166 – Darcy Ribeiro</li>
-        <li>UBS Vargem – Rua Retira Dos Imigrantes, 80 – Retiro</li>
-      </ul>
-    </div>
-  </div>
-</section>
-<section id="upas">
-  <h2>Unidades de Pronto Atendimento (UPAs)</h2>
+    <section id="upas">
+        <h2>Unidades de Pronto Atendimento (UPAs)</h2>
+        <button class="accordion">Laboratório HS &#9660;</button>
+        <div class="panel">
+            <p>UPA 24h São Joaquim de Bicas<br>
+            R. José Gabriel de Rezende, 1717 - Pedra Branca, São Joaquim de Bicas - MG, 32920-000</p>
+        </div>
 
-  <button class="accordion">Laboratório HS &#9660;</button>
-  <div class="panel">
-    <p>UPA 24h São Joaquim de Bicas<br>
-    R. José Gabriel de Rezende, 1717 - Pedra Branca, São Joaquim de Bicas - MG, 32920-000</p>
-  </div>
+        <button class="accordion">UPA JK - Eldorado - Geraldo Pinto Vieira &#9660;</button>
+        <div class="panel">
+            <p>Av. João César de Oliveira, 780<br>
+            Tel: (31) 2538-9299<br>
+            Aberto 24 horas</p>
+        </div>
 
-  <button class="accordion">UPA JK - Eldorado - Geraldo Pinto Vieira &#9660;</button>
-  <div class="panel">
-    <p>Av. João César de Oliveira, 780<br>
-    Tel: (31) 2538-9299<br>
-    Aberto 24 horas</p>
-  </div>
+        <button class="accordion">UPA Industrial &#9660;</button>
+        <div class="panel">
+            <p>Av. Maria da Glória, 491<br>
+            Tel: (31) 3352-2070<br>
+            Aberto 24 horas</p>
+        </div>
 
-  <button class="accordion">UPA Industrial &#9660;</button>
-  <div class="panel">
-    <p>Av. Maria da Glória, 491<br>
-    Tel: (31) 3352-2070<br>
-    Aberto 24 horas</p>
-  </div>
+        <button class="accordion">UPA Ressaca &#9660;</button>
+        <div class="panel">
+            <p>Praça 21 de Abril<br>
+            Tel: (31) 2538-9299<br>
+            Aberto 24 horas</p>
+        </div>
 
-  <button class="accordion">UPA Ressaca &#9660;</button>
-  <div class="panel">
-    <p>Praça 21 de Abril<br>
-    Tel: (31) 2538-9299<br>
-    Aberto 24 horas</p>
-  </div>
+        <button class="accordion">UPA Petrolândia &#9660;</button>
+        <div class="panel">
+            <p>R. Refinária União, n° 137 - Petrolândia, Contagem - MG, 32072-180<br>
+            Tel: (31) 3352-5312<br>
+            Aberto 24 horas</p>
+        </div>
 
-  <button class="accordion">UPA Petrolândia &#9660;</button>
-  <div class="panel">
-    <p>R. Refinária União, n° 137 - Petrolândia, Contagem - MG, 32072-180<br>
-    Tel: (31) 3352-5312<br>
-    Aberto 24 horas</p>
-  </div>
+        <button class="accordion">UPA Vargem das Flores &#9660;</button>
+        <div class="panel">
+            <p>Av. Retiro dos Imigrantes, 80 - Retiro, Contagem - MG, 32050-710<br>
+            Tel: (31) 3198-6251<br>
+            Aberto 24 horas</p>
+        </div>
+    </section>
 
-  <button class="accordion">UPA Vargem das Flores &#9660;</button>
-  <div class="panel">
-    <p>Av. Retiro dos Imigrantes, 80 - Retiro, Contagem - MG, 32050-710<br>
-    Tel: (31) 3198-6251<br>
-    Aberto 24 horas</p>
-  </div>
-</section>
+    <section id="hospitais">
+        <h2>Hospitais</h2>
+        <p>Informações sobre hospitais parceiros serão adicionadas em breve.</p>
+    </section>
 
     <section id="central-do-laboratorio">
         <h2>Central do Laboratório</h2>
@@ -199,7 +214,8 @@
         <p><strong>Telefone:</strong> (31) 3046-7105</p>
         <p><strong>E-mail:</strong> laboratorios@email.com</p>
     </section>
-    <section id="contato">
+
+    <section id="duvida">
         <h2>Quando entrar em contato com a Central do Laboratório?</h2>
         <p>Entre em contato com a Central do Laboratório se você:</p>
         <ul>
@@ -215,57 +231,64 @@
             <li>Tem dúvidas sobre a interpretação dos resultados de seus exames.</li>
         </ul>
     </section>
+
     <script>
-  const accordions = document.querySelectorAll(".accordion");
+        const accordions = document.querySelectorAll(".accordion");
 
-  accordions.forEach(button => {
-    button.addEventListener("click", function () {
-      this.classList.toggle("active");
-      const panel = this.nextElementSibling;
+        accordions.forEach(button => {
+            button.addEventListener("click", function () {
+                this.classList.toggle("active");
+                const panel = this.nextElementSibling;
 
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-        this.innerHTML = this.innerHTML.replace("▲", "▼").replace("&#9650;", "&#9660;");
-      } else {
-        panel.style.display = "block";
-        this.innerHTML = this.innerHTML.replace("▼", "▲").replace("&#9660;", "&#9650;");
-      }
-    });
-  });
-</script>
-<script>
-  const dropdown = document.querySelector('.dropdown');
-  const toggle = document.querySelector('.dropdown-toggle');
-  const menu = document.getElementById('dropdown-menu');
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                    this.innerHTML = this.innerHTML.replace("▲", "▼").replace("&#9650;", "&#9660;");
+                } else {
+                    panel.style.display = "block";
+                    this.innerHTML = this.innerHTML.replace("▼", "▲").replace("&#9660;", "&#9650;");
+                }
+            });
+        });
 
-  // Detecta se o dispositivo é mobile
-  const isTouchDevice = () => {
-    return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-  };
+        const dropdowns = document.querySelectorAll('.dropdown');
 
-  function toggleDropdown(event) {
-    if (isTouchDevice()) {
-      event.preventDefault();
-      dropdown.classList.toggle('open');
-    }
-  }
+        // Detecta se o dispositivo é mobile
+        const isTouchDevice = () => {
+            return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        };
 
-  // Funciona com hover no desktop
-  if (!isTouchDevice()) {
-    dropdown.addEventListener('mouseenter', () => {
-      dropdown.classList.add('open');
-    });
-    dropdown.addEventListener('mouseleave', () => {
-      dropdown.classList.remove('open');
-    });
-  }
+        dropdowns.forEach(dropdown => {
+            const toggle = dropdown.querySelector('.dropdown-toggle');
 
-  // Fecha ao clicar fora (para mobile)
-  document.addEventListener('click', function (e) {
-    if (!dropdown.contains(e.target)) {
-      dropdown.classList.remove('open');
-    }
-  });
-</script>
+            if (isTouchDevice()) {
+                toggle.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    dropdowns.forEach(d => { // Fecha outros dropdowns se abertos
+                        if (d !== dropdown) {
+                            d.classList.remove('open');
+                        }
+                    });
+                    dropdown.classList.toggle('open');
+                });
+            } else {
+                // Funciona com hover no desktop
+                dropdown.addEventListener('mouseenter', () => {
+                    dropdown.classList.add('open');
+                });
+                dropdown.addEventListener('mouseleave', () => {
+                    dropdown.classList.remove('open');
+                });
+            }
+        });
+
+        // Fecha ao clicar fora (para mobile e desktop, se não for um hover)
+        document.addEventListener('click', function (e) {
+            dropdowns.forEach(dropdown => {
+                if (!dropdown.contains(e.target)) {
+                    dropdown.classList.remove('open');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
