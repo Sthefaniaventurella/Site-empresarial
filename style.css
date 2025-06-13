@@ -26,14 +26,29 @@ nav ul {
 
 nav li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
 }
 
+/* --- Adição e Modificação aqui --- */
+/* Aplica o estilo de quadro branco a TODOS os links do menu principal */
 nav a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    /* Estilos para o quadro branco */
+    background-color: white; /* Fundo branco */
+    padding: 10px 15px; /* Espaçamento interno */
+    border-radius: 6px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave */
+    transition: background-color 0.3s ease; /* Transição suave no hover */
+    display: inline-block; /* Permite aplicar padding e shadow corretamente */
 }
+
+nav a:hover {
+    background-color: #f0f0f0; /* Fundo cinza claro no hover */
+}
+/* --- Fim da Adição e Modificação --- */
+
 
 section {
     padding: 20px;
@@ -50,115 +65,131 @@ ul {
     list-style: disc;
     margin-left: 20px;
 }
+
 .accordion {
-  background-color: #eee;
-  color: #333;
-  cursor: pointer;
-  padding: 15px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 16px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  border-radius: 5px;
-  margin-top: 10px;
+    background-color: #eee;
+    color: #333;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .accordion:hover {
-  background-color: #ddd;
+    background-color: #ddd;
 }
 
 .panel {
-  display: none;
-  padding: 10px 20px;
-  background-color: #f9f9f9;
-  border-left: 3px solid #ff0000;
-  border-radius: 0 0 5px 5px;
-  margin-bottom: 10px;
+    display: none;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #ff0000;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 10px;
 }
 
 .panel ul {
-  margin: 10px 0 0 20px;
-  padding: 0;
-  list-style: disc;
+    margin: 10px 0 0 20px;
+    padding: 0;
+    list-style: disc;
 }
 
 /* Estilo do menu */
 .navbar {
-  padding: 10px 20px;
-  background-color: transparent;
+    padding: 10px 20px;
+    background-color: transparent; /* Mantém o fundo transparente se desejar */
 }
 
 .menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+    flex-wrap: wrap; /* Garante que os itens quebrem a linha se não houver espaço */
 }
 
 .menu > li {
-  position: relative;
+    position: relative;
+    /* Ajusta a margem entre os itens para não interferir com o padding do 'a' */
+    margin: 5px 10px; /* Ajuste se necessário para o espaçamento visual */
 }
 
+/* O .dropdown-toggle já tem esses estilos, mas vamos garantir que não haja conflitos */
 .dropdown-toggle {
-  background-color: white;
-  padding: 10px 15px;
-  border-radius: 6px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  cursor: pointer;
-  display: inline-block;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: background-color 0.3s ease;
+    /* all: unset; /* Cuidado ao usar all: unset; pode remover estilos essenciais */
+    display: inline-block; /* Importante para padding e shadow */
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+    user-select: none; /* Evita seleção acidental no toque */
 }
 
 .dropdown-toggle:hover {
-  background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 
 .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  list-style: none;
-  margin: 5px 0 0 0;
-  padding: 0;
-  min-width: 180px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 1000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+    min-width: 180px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
 }
 
 .dropdown-menu li a {
-  display: block;
-  padding: 10px 15px;
-  color: #333;
-  text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    /* Removido o background branco e sombra aqui para os itens internos do dropdown */
+    background-color: transparent; /* Garante que não duplique o estilo do pai */
+    box-shadow: none; /* Garante que não duplique a sombra do pai */
 }
 
 .dropdown-menu li a:hover {
-  background-color: #f0f0f0;
+    background-color: #f0f0f0;
 }
 
 /* Mostrar o menu com animação */
 .dropdown.open .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 /* Seção do tutorial */
 .tutorial {
-  margin-top: 60px;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-top: 2px solid #ccc;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #ccc;
+}
+
+html {
+    -webkit-text-size-adjust: 100%; /* Impede zoom automático de texto */
 }
