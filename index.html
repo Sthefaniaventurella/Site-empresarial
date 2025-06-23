@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html  lang="pt-br">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hs Farma- Laboratório de Análises Clínicas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Logo do Laboratório">
+        <img src="logo.jpg" alt="Logo do Laboratório">
     </header>
     <nav class="navbar">
         <ul class="menu">
@@ -37,18 +40,27 @@
             <li><a href="#duvida">Dúvidas Frenquentes</a></li>
         </ul>
     </nav>
-
-    <section id="como-acessar" class="tutorial">
-        <h2>Como acessar os resultados</h2>
-        <p>Siga o passo a passo para acessar seus resultados no site externo:</p>
-        <ol>
-            <li>Clique em "Acesse agora".</li>
-            <li>Você será direcionado para o site parceiro.</li>
-            <li>Informe seu CPF e número do protocolo.</li>
-            <li>Visualize ou baixe seus resultados.</li>
-        </ol>
-    </section>
-
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="AT.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="Tecnico.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="Coleta.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
     <section id="sobre-nos">
         <h2>Sobre Nós</h2>
         <p>O Laboratório de Análises Clínicas é um laboratório de excelência que oferece uma ampla variedade de exames clínicos para atender às necessidades de seus pacientes. Com uma equipe altamente qualificada e execelentes equipamentos, o laboratório se destaca pela qualidade de seus serviços e pela agilidade na entrega dos resultados.</p>
@@ -231,7 +243,16 @@
             <li>Tem dúvidas sobre a interpretação dos resultados de seus exames.</li>
         </ul>
     </section>
-
+    <section id="como-acessar">
+        <h2>Como acessar os resultados</h2>
+        <p>Siga o passo a passo para acessar seus resultados no site externo:</p>
+        <ol>
+            <li>Clique em "Acesse agora".</li>
+            <li>Você será direcionado para o site parceiro.</li>
+            <li>Informe seu Usuário e senha no protocolo de retirada.</li>
+            <li>Visualize ou baixe seus resultados.</li>
+        </ol>
+    </section>
     <script>
         const accordions = document.querySelectorAll(".accordion");
 
@@ -290,5 +311,6 @@
             });
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
