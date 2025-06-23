@@ -206,3 +206,9 @@ header img {
     height: 250px;
   }
 }
+.carousel-item img {
+  height: 400px; /* ou outro valor desejado */
+  object-fit: cover; /* Corta para preencher o espaço */
+  border-radius: 10px; /* opcional: cantos arredondados */
+}
+
