@@ -21,7 +21,6 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 nav li {
@@ -103,6 +102,7 @@ ul {
 
 /* Estilo do menu */
 .navbar {
+    justify-content: center;
     padding: 10px 20px;
     background-color: transparent; /* Mantém o fundo transparente se desejar */
 }
@@ -122,7 +122,6 @@ ul {
     margin: 5px 10px; /* Ajuste se necessário para o espaçamento visual */
 }
 
-/* O .dropdown-toggle já tem esses estilos, mas vamos garantir que não haja conflitos */
 .dropdown-toggle {
     /* all: unset; /* Cuidado ao usar all: unset; pode remover estilos essenciais */
     display: inline-block; /* Importante para padding e shadow */
@@ -192,4 +191,18 @@ ul {
 
 html {
     -webkit-text-size-adjust: 100%; /* Impede zoom automático de texto */
+}
+header img {
+    display: block;
+    margin: 0 auto; /*Centraliza a imagem */
+    max-width: 550px; /* Define a largura máxima da imagem. Altere este valor. */
+    height: auto;      /* Mantém a proporção original da imagem automaticamente. */
+    /* Se quiser uma altura fixa e que ela cubra um espaço, pode usar: */
+    /* height: 80px; */
+    /* object-fit: contain; /* ou cover, dependendo de como quer preencher */
+}
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 250px;
+  }
 }
