@@ -195,7 +195,7 @@ html {
 header img {
     display: block;
     margin: 0 auto; /*Centraliza a imagem */
-    max-width: 550px; /* Define a largura máxima da imagem. Altere este valor. */
+    max-width: 100%; /* Define a largura máxima da imagem. Altere este valor. */
     height: auto;      /* Mantém a proporção original da imagem automaticamente. */
     /* Se quiser uma altura fixa e que ela cubra um espaço, pode usar: */
     /* height: 80px; */
@@ -211,4 +211,5 @@ header img {
   object-fit: cover; /* Corta para preencher o espaço */
   border-radius: 10px; /* opcional: cantos arredondados */
 }
+
 
